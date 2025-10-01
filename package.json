@@ -1,0 +1,17 @@
+{
+  "name": "comconnect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd frontend && npm run start",
+    "start:local": "cd frontend && npm run start:local",
+    "start:prod": "cd frontend && npm run start:prod",
+    "start:docker": "cd frontend && npm run start:docker",
+    "serve": "cd frontend && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
