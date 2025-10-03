@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - app_network
+    environment:
+      - NODE_ENV=development
+      - KAFKA_BROKER=ec2-3-6-113-80.ap-south-1.compute.amazonaws.com:9092
+      - KAFKA_CLIENT_ID=notification-service
+      - KAFKA_GROUP_ID=notification-group
+      - REDIS_HOST=ec2-3-6-113-80.ap-south-1.compute.amazonaws.com
+      - REDIS_PORT=6379
+      - MONGODB_URI=mongodb+srv://akshanshkaushal9:GRS7yWeIDcF8SEMQ@cluster0.t7rpzk9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    volumes:
+      - ./backend:/app/backend
+      - /app/backend/node_modules
+      - ./.env:/app/backend/.env
+    extra_hosts:
+      - "ec2-3-6-113-80.ap-south-1.compute.amazonaws.com:3.6.113.80"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app_network
+    environment:
+      - REACT_APP_API_URL=http://backend:5000
+      - REACT_APP_SOCKET_URL=http://backend:5000
+
+networks:
+  app_network:
+    driver: bridge
