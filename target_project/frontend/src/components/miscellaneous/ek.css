@@ -1,0 +1,17 @@
+@keyframes textAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animated-text {
+    background: linear-gradient(90deg, rgb(225, 159, 225), #800080, white, #800080, white, #800080);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 4s linear infinite;
+  }
+  

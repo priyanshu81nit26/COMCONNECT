@@ -1,0 +1,181 @@
+
+
+
+
+.groupchat {
+  margin: 10px;
+
+  color: #000;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.group-chat-content {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #04539D;
+
+  width: 100%;
+  border-radius: var(--chakra-radii-lg);
+  padding: 15px;
+
+  padding: var(--chakra-space-3);
+  flex-grow: 1;
+
+  overflow-x: hidden;
+
+ 
+}
+
+.group-chat-content::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+.group-chat-content::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 8px;
+  border:1px solid #6d6a6a ;
+  margin: 2px;
+}
+
+.group-chat-content::-webkit-scrollbar-thumb {
+  background: #3C87CD;
+  border-radius: 8px;
+}
+
+.group-chat-content::-webkit-scrollbar-thumb:hover {
+  background: #1f449c; /* Thumb hover color */
+}
+
+
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+  max-height: calc(100vh - 150px);
+  background-color: white; 
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.enteramsg {
+  margin: 0 2px;
+
+}
+/* .groupchatbtn {
+  background-color: transparent;
+  color:  #fff;
+  border: none;
+  padding: 10px 20px;
+  
+  
+  font-size: 16px;
+  
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.groupchatbtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  
+}
+
+.groupchatbtn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.groupchatbtn:hover {
+  animation: pulse 1s infinite;
+} */
+
+/* @keyframes pulse {
+  0% {
+    background-color: #821682;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #993399;
+    transform: scale(1.05);
+  }
+  100% {
+    background-color: #821682;
+    transform: scale(1);
+  }
+} */
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .groupchat {
+    padding: 8px 16px;
+    top:10px;
+    font-size: 10px !important;
+  }
+}
+
+.groupchat {
+  background-color: #821682 !important;
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.groupchat::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.groupchat:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.groupchat:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #821682;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #993399;
+    transform: scale(1.05);
+  }
+  100% {
+    background-color: #821682;
+    transform: scale(1);
+  }
+}

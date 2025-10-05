@@ -1,0 +1,56 @@
+.translucent-box {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(7px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  margin: 0; /* Removed margin-bottom to eliminate gap */
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: stretch;  */
+  align-items: center;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start; /* Align items to the start */
+  margin-top: 13vh; /* Space above the content */
+}
+
+.left-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Allows vertical stacking of elements */
+  padding: 35px;
+}
+
+.right-box {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 2rem;
+}
+
+.right-image {
+  width: 100%;
+  height: 53vh; /* Ensure this height fits well with your layout */
+  border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 938px) {
+  .right-box {
+      display: none;
+  }
+  .left-box {
+      width: 90%;
+      padding: 20px;
+  }
+}
