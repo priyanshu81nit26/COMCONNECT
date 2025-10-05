@@ -67,7 +67,7 @@ Each microservice is designed for modularity and **separation of concerns**.
 ### **📌 Microservices Overview**
 | Service            | Technology Stack                | Functionality |
 |--------------------|--------------------------------|--------------|
-| **Auth Service**   | Node.js, JWT, MariaDB          | Handles authentication & authorization |
+| **Auth Service**   | Node.js, JWT          | Handles authentication & authorization |
 | **Chat Service**   | Node.js, WebSockets, MongoDB   | Real-time messaging |
 | **Geo Service**    | Node.js, WebSockets,           | Tracks organizers in real-time |
 | **Job Service**    | Node.js, Gmail API, MongoDB    | Fetches job listings |
@@ -82,7 +82,7 @@ Each microservice is designed for modularity and **separation of concerns**.
 | **Backend**        | Node.js, Express.js |
 | **Database (NoSQL)** | MongoDB (Flexible) |
 | **Cache**         | Redis (Elasticache) |
-| **Message Queue** | Kafka (on EC2) |
+| **Message Queue** | Kafka  |
 | **Real-Time**    | WebSockets |
 
 
@@ -108,7 +108,7 @@ version: "3.9"
     build: .
     restart: always
     depends_on:
-      - mariadb
+      - 
       - mongodb
       - redis
 ```
