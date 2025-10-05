@@ -1,0 +1,468 @@
+.workspace_page {
+  width: 85vw;
+  height: 35vh;
+  padding: 0.2rem;
+}
+.workspace_display {
+  width: 100%;
+  height: 100%; /* Adjust height to fit content */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background:transparent;
+  color: #fff;
+}
+.translucent-box {
+  background:#80a8e447; 
+  backdrop-filter: blur(5.78645896911621px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border-image-source: linear-gradient(135.59deg, rgba(88, 130, 193, 0.49) 1.28%, rgba(88, 130, 193, 0.11) 96.26%);
+  margin: 0; /* Removed margin-bottom to eliminate gap */
+  }
+
+.workspace_content {
+  width: 60%; /* Adjust width to allow more space for the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  gap: 20px;
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.workspace_content_heading {
+  font-family: "Poppins";
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 90px;
+}
+
+.workspace_content_description {
+  font-family:"Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.create_workspace_btn { 
+  display: inline-flex; /* Align content inside the button */
+  align-items: center; 
+  justify-content: center; 
+  color: #04539D;
+  background-color: #FBB03B;
+  border-radius: 10px;
+  height: 4.5rem; 
+  width: auto; 
+  font-size: 24px; 
+  font-weight: bold; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0 2rem; /* Add horizontal padding for spacing */
+  text-decoration: none; /* Remove underline if applicable */
+  border: none;
+  margin-left: 1.5rem;
+}
+
+
+.create_workspace_btn:hover {
+  background-color: #1a5a73; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.create_workspace_btn_container {
+  margin-top: 1.5rem;
+  display: inline;
+  height: 50%;
+  
+}
+.workspace_img_container {
+  width:40%;
+  height: 95%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.workspace_img {
+  width: 72%; /* Make the image responsive */
+  height: 95%; /* Maintain aspect ratio */
+  
+}
+
+/* . {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+} */
+
+.modal h2 {
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal_content {
+  display: flex;
+
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.modal_content button{
+  width: auto;
+  padding: 5px 18px;
+  background-color: #2d83a8;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5em;
+}
+.modal_content input {
+  border: 0.86px solid black;
+  border-radius: 0.5em;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.modal_button {
+  display: flex;
+
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.modal_button button {
+  width: auto; /* Adjust width to fit content */
+  padding: 10px 20px;
+  background-color: #2d83a8;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center; /* Center text */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  cursor: pointer; /* Add pointer cursor */
+  transition: all 0.3s ease; /* Add transition for hover effect */
+}
+
+.modal_button button:hover {
+  background-color: #1a5a73; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.workspace_holder {
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.workspace_holder input {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+
+.workspace_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workspace_btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.workspace_btn button {
+  /* width: 100%; */
+  margin-top: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #000;
+  background-color: #c8c3c3db;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.join_workspace_btn { 
+  font-family: "Poppins";      
+  display: inline-flex; 
+  padding: 10px 20px;
+  background-color: #FBB03B;
+  color: #04539D;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 24px; 
+  cursor: pointer; /* Add pointer cursor */
+  text-align: center; /* Center text */
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem; 
+  width: auto;
+  margin-top: 0.5rem;
+}
+
+.join_workspace_btn:hover {
+  background-color: #1a5a73; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.simple {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.join_workspace_img {
+  width: 100%;
+  height: 20%;
+}
+.workspace_main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  background-color:  #04539D;
+  ;
+}
+
+.workspace_intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:87vw; 
+}
+.content_block{
+  width: 65%;
+
+}
+.image_block{
+  width: 35%;
+}
+
+.workspace_rizz{
+  display: flex;
+}
+
+.worksapce_lol {
+  width: 100vw;
+  height: 80%;
+}
+
+.join_workspace_modal {
+  width: 75vw;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius:1rem;
+  
+}
+
+
+
+@media (max-width: 600px) {
+  .workspace_display {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .workspace_content {
+    width: 100%;
+    text-align: center;
+    align-items: center; /* Center align items for mobile */
+  }
+
+  .workspace_img_container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .workspace_img {
+    width: 80%;
+    height: auto;
+  }
+
+  .create_workspace_btn_container,
+  .join_workspace_modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .create_workspace_btn,
+  .join_workspace_btn {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .modal_content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .modal_button {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .iskima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-right: 1rem;
+    flex-direction: column;
+  }
+}
+.lo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.join_workspace_lol {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 2.5rem;
+  padding: 5rem;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.join_workspace_lol > :nth-child(n + 11) {
+  grid-column: span 1.25; /* Ensure buttons after the 10th span 1.25 columns */
+}
+
+.join_workspace_lol > :nth-child(n + 19) {
+  grid-column: span 1.5; /* Ensure buttons after the 18th span 1.5 columns */
+}
+
+@media (max-width: 1200px) {
+  .join_workspace_lol {
+    grid-template-columns: repeat(8, 1fr); /* 8 columns for the second row */
+  }
+}
+
+@media (max-width: 900px) {
+  .join_workspace_lol {
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .join_workspace_lol {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for mobile */
+  }
+}
+
+.cnt {
+  width: 100%; /* Make buttons take full width of the grid cell */
+  height: 60px; /* Set a fixed height for all buttons */
+  display: flex; /* Center text inside the button */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 10px; /* Add padding for better spacing */
+  text-align: center; /* Center the text */
+  color:#04539D;
+}
+
+.modal_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  z-index: 1001;
+}
+.workspace_holder {
+  display: flex;
+  gap: 20px; /* Add gap between elements */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.workspace_holder .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between label and input */
+}
+
+.role-container {
+  height: 200px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.role-item {
+  margin-bottom: 5px; /* Optional: Add margin between role items */
+}
+.workspace_holder input {
+  width: 150px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.role-container {
+  height: 200px; /* Set a fixed height */
+  width: 100px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+}
+
+.role-item {
+  margin-bottom: 5px; /* Optional: Add margin between role items */
+}
