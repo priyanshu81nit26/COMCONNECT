@@ -9,14 +9,7 @@ This is a **scalable, real-time workspace collaboration and event tracking syste
 - ✅ **Real-time chat** via WebSockets
 - ✅ **Workspace management** with granular roles
 - ✅ **Task tracking** integrated with MongoDB
-- ✅ **Geolocation tracking** for event organizers
-- ✅ **Job fetching** via Google Auth & Gmail API
 - ✅ **Event streaming** with Kafka
-
-
-- ## 🚀 Live Demo  
-🔗 **Check out the deployed application here:** [Com Connect](https://com-connect.vercel.app/)  
-
 🔥 Experience real-time collaboration, seamless chat, and powerful workspace management right in your browser!  
 
 
